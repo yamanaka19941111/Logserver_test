@@ -1,0 +1,2 @@
+# Logserver_test
+rsyslogおよびLogstashサーバをテスト/検証するためのリポジトリです。
