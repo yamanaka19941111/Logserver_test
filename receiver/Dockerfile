@@ -31,7 +31,7 @@ COPY rsyslog.log /etc/logrotate.d/rsyslog
 ############################
 # rsyslog(rsyslogd)を起動する
 ############################
-CMD [ "rsyslogd", "-n" ]
+#CMD [ "rsyslogd", "-n" ]
 
 # rsyslogd -N 1でrsyslog.confファイルをチェックし、問題無ければ、rsyslogd -n でフォアグラウンド起動する
-#CMD [ "sh", "-c", "rsyslogd -N 1 && rsyslogd -n" ]
+CMD [ "sh", "-c", "rsyslogd -N 1 && rsyslogd -n" ]
